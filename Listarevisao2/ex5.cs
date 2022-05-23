@@ -17,6 +17,6 @@ public class MainClass {
     else if(u==10)Console.WriteLine("Outubro é do quarto timestre");
     else if(u==11)Console.WriteLine("Novembro é do quarto timestre");
     else if(u==12)Console.WriteLine("Dezembro é do quarto timestre");
-    else Console.WriteLine("DDD não encontrado!");
+    else Console.WriteLine("Ops!!! Esse mês é inválido!!!");
   }
 }
