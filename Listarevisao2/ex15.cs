@@ -4,19 +4,26 @@ class Program
 {
     static void Main() {
         int a,b,c,maior,menor,meio;
-        Console.WriteLine("Digite 3 valores:");
+        Console.WriteLine("Primeiro numero: ");
         a = int.Parse(Console.ReadLine());
+        Console.WriteLine("Segundo numero: ");
         b = int.Parse(Console.ReadLine());
+        Console.WriteLine("Terceiro numero: ");
         c = int.Parse(Console.ReadLine());
-        if (a>b && a>c) maior = a;
-        else if (b>a && b>c) maior = b;
-        else maior = c;
-        if (a<b && a<c) menor = a;
-        else if (b<a && b<c) menor = b;
-        else menor = c;
-        if (maior = a && menor = c) medio = b;
-        else if (maior = b && menor =c) medio = a;
-        else if (maior = a && menor =b) medio = c;
-        Console.WriteLine(maior + ", " + medio + ", " + menor);
+        maior = 1;
+        menor = 0;
+        meio = 0;
+        if (a>b && a>c) a=maior;
+        if (b>a && b>c) b=maior;
+        if (c>a && c>b) c=maior;
+        if (a<b && a<c) a=menor;
+        if (b<a && b<c) b=menor;
+        if (c<a && c<b) c=menor;
+        if (a != menor && a != maior) a = meio;
+        if (b != menor && b != maior) b = meio;
+        if (c != menor && c != maior) c = meio;
+        Console.WriteLine(maior + "," + meio + "," + menor);
+        
+        
   }
 }
