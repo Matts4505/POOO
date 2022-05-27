@@ -13,7 +13,8 @@ class Program
         double raiz = Math.Sqrt(delta);
         var x1 = ((-(b)) + raiz) / (2 * a);
         var x2 = ((-(b)) - raiz) / (2 * a);
-        Console.WriteLine("Valor de X': " + x1);
-        Console.WriteLine("Valor de X'': " +  x2);
+        if (x1 > -1000000 && x1 <1000000 && x2 > -1000000 && x2 <1000000)Console.WriteLine(" O Valor de X' é = " + x1 + " e o valor de X'' é = " + x2);
+        else Console.WriteLine("Impossivel calcular!!!");
+        
     }
 }
