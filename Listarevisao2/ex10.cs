@@ -10,6 +10,6 @@ class Program
                  mes = int.Parse(texto[1]);
                  ano = int.Parse(texto[2]);
         if (dia>0 && dia<31 && mes > 0 && mes <13 &&  ano<2101 && ano>1900) Console.WriteLine("E uma data valida!!!");
-        else Console.WriteLine("Nao e uma data valida!!!");
+        else Console.WriteLine("Ops, ou a data é inválida ou parece que ainda não chegamos nessa data :(");
   }
 }
