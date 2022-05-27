@@ -4,6 +4,7 @@ class Program
 {
     static void Main() {
         int dia,mes,ano;
+        Console.WriteLine("Digite uma data, nesse formato: 00/00/0000");
         string[] texto = Console.ReadLine().Split("/");
                  dia = int.Parse(texto[0]);
                  mes = int.Parse(texto[1]);
@@ -20,6 +21,6 @@ class Program
         else if (mes == 10) Console.WriteLine(" A data é " + dia + " de outubro de " + ano) ;
         else if (mes == 11) Console.WriteLine(" A data é " + dia + " de novembro de " + ano) ;
         else if (mes == 12) Console.WriteLine(" A data é " + dia + " de dezembro de " + ano) ;
-        else Console.WriteLine("Nao e uma data valida!!!");
+        else Console.WriteLine("Nao e uma data valida !!!");
   }
 }
