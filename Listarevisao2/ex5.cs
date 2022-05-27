@@ -3,7 +3,7 @@ using System;
 public class MainClass {
   public static void Main(string[] args) {
       int u;
-    Console.WriteLine("Digite um numero:");
+    Console.WriteLine("Digite um numero que corresponde a um mês do ano: ");
     u = int.Parse(Console.ReadLine());
     if (u == 1) Console.WriteLine("Janeiro é do primeiro timestre"); 
     else if (u == 2)Console.WriteLine("Fevereiro é do primeiro timestre ");
