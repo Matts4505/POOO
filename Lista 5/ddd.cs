@@ -11,6 +11,7 @@ public class MainClass {
     else if (u==21)Console.WriteLine("Rio de Janeiro");
     else if (u==32) Console.WriteLine("Juiz de Fora");
     else if(u==19)Console.WriteLine("Campinas");
+    else if(u == 84) Console.Write("Rio Grande do Norte");
     else Console.WriteLine("DDD não encontrado!");
   }
 }
