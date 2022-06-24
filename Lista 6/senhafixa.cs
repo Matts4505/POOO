@@ -12,6 +12,11 @@ class Program
           recebfinal = recebe;
           if (recebfinal == senha) Console.WriteLine("Senha Correta!!!");
           else Console.WriteLine("Senha Errada!!!");
+          Console.WriteLine("Quer continuar??? (s/n)");
+          string resp = Console.ReadLine();
+            if (resp == "s") senha = senha + 0;
+            else if (resp == "n") break;
+            else Console.Write("Digite apenas 'n' ou 's' !!!");
         }
     }
 }

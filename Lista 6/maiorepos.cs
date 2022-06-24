@@ -3,17 +3,19 @@ using System;
 class Program
 {
     static void Main() {
-        int maior,pos,num;
+        int num,x,pos,maior,val;
+        x = 0;
+        pos =0;
         maior = 0;
-        pos = 0;
-        num = 0;
-        for(int x = 1; x<=100; x++){
-            Console.WriteLine("Digite um valor: ");
+        Console.WriteLine("Digite a quantidade de valores a serem lidos: ");
+        val = int.Parse(Console.ReadLine());
+        while(x != val){
+            Console.WriteLine("Digite um numero:");
             num = int.Parse(Console.ReadLine());
-                if (num>maior) maior = num;
-                if (num>maior) pos = x; 
+            x += 1;
+            pos += 1;
+            if(num>maior) maior = num;
         }
-        
-        Console.Write("Maior: "+ num + "Posicao:" + pos);
+        Console.WriteLine("O maior numero é: " + maior + " e sua posição é: "  + pos);
     }
 }

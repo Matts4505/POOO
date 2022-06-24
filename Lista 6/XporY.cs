@@ -3,18 +3,23 @@ using System;
 class Program
 {
     static void Main() {
-    int qtd,a,b;
+      int limite;
+      double divisao;
 
-        Console.WriteLine("Digite a  quantidade de Valores:");
-        qtd = int.Parse(Console.ReadLine());
-        for(int qtd=1 ; qtd <=10; qtd++){
-            Console.WriteLine("Digite dois valores em mesma linha: ");
-            string[] texto = Console.ReadLine().Split(" ");
-            a = int.Parse(texto[0]);
-            b = int.Parse(texto);
-            int divisao = (a/b);
-            Console.WriteLine("Divisão = " + divisao);
-
+      limite = int.Parse(Console.ReadLine());
+      for (int i=0; i<limite; i++)
+        {
+            string[] line = Console.ReadLine().Split(" ");
+            double X = double.Parse(line[0]);
+            double Y = double.Parse(line[1]);
+            if (Y == 0) 
+            {
+               Console.WriteLine("divisao impossivel");
+            } 
+            else 
+            {
+                divisao = X / Y; 
+                Console.WriteLine(divisao);
         }
     }
-}
+}    

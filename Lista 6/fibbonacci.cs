@@ -1,11 +1,21 @@
+using System;
 
-            a = int.Parse(texto[0]);
-            b = int.Parse(texto[1]);
-
-
-string[] texto = "0,1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584";
-for(int n = 1; n==n; n++){
-            Console.WriteLine("Digite um valor: ");
-            num = int.Parse(Console.ReadLine());
-                if (num>maior) maior = num;
-                if (num>maior) pos = x;
+class Program
+{
+    static void Main() {
+        int a,b,c,num,x;
+        a = 0;
+        b = 1;
+        c = 0;
+        x = 0;
+        Console.WriteLine("Digite a quantidade de valores:");
+        num = int.Parse(Console.ReadLine());
+        while(x != num){
+            Console.WriteLine(a);
+            c = a+b;
+            b=c;
+            a=b;
+            x +=1;
+        }
+    }
+}
