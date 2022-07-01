@@ -16,6 +16,7 @@ class Program
     static void maior(int n1, int n2, int  n3){
         if (n1>n2 && n1>n3) Console.WriteLine(n1 + " É o maior !!!");
         if (n2 > n1 && n2>n3) Console.WriteLine(n2 + " É o maior !!!");
-        else Console.WriteLine(n3 + " É o maior !!!");
+        if (n3 > n1 && n3>n2) Console.WriteLine(n3 + " É o maior !!!");
+        else Console.WriteLine("Os valores informados são iguais !!!");
     }
 }
