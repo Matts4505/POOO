@@ -25,4 +25,12 @@ class Program
             }
             }
         }
+    private string reverseString(string Word)
+{
+   char[] arrChar = Word.ToCharArray();
+   Array.Reverse(arrChar);
+   string invertida = new String(arrChar);
+
+   return invertida;
+    }
     }
