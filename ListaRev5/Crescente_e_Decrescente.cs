@@ -31,6 +31,6 @@ class Program
         if (n3<n2 && n3 <n1) menor = n1;
         if( n3>n2 && n1>n3)  meio = n3;
         if( n2>n3 && n3>n1)  meio = n3;
-        Console.WriteLine("VALORES EM ORDEM DECRESCENTE: " + maior +" , " + meio + " , " + menor);
+        Console.WriteLine("VALORES EM ORDEM DECRESCENTE == " + maior +" , " + meio + " , " + menor);
     }
 }
